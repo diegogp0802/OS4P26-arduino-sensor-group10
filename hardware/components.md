@@ -7,14 +7,14 @@ hardware we used.
 
 | # | Component | Exact model we used | Notes |
 |---|---|---|---|
-| 1 | Microcontroller board | Arduino Uno Rev3? | |
-| 2 | CO₂ sensor | MH-Z19 (_TODO: is yours MH-Z19, MH-Z19B or MH-Z19C?_) | |
+| 1 | Microcontroller board | Arduino Uno Rev3? | _TODO: confirm revision, original or clone_ |
+| 2 | CO₂ sensor | MH-Z19C | Named in our wiring diagram. _TODO: add a link to the instruction manual that matches your exact module_ |
 | 3 | P/T/RH sensor |  |  |
-| 4 | SD card reader | _TODO: model/brand_ | |
+| 4 | SD card reader | microSD card adapter | Named in our wiring diagram. _TODO: model/brand_ |
 | 5 | SD card | _TODO: capacity_ |  |
 | 6 | Breadboard | Size ? | |
 | 7 | Jumper cables | Male-to-male, male-to-female as needed | |
-| 8 | Powerbank? | _TODO: model and capacity_ |  |
+| 8 | External battery (laptop) | _TODO: is it the laptop's USB, or a powerbank? Model and capacity_ |  |
 | 9 | USB cable | USB-A to USB-B | Must be a **data** cable, not charge-only |
 
 ## Voltage warning
