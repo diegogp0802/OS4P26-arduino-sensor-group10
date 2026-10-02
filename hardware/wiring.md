@@ -11,6 +11,18 @@ one is on `docs.arduino.cc` under "Arduino Uno Rev3".
 
 ![CO2 logger wiring diagram](schematic.drawio.svg)
 
+
+> **How to edit this diagram**
+>
+> The image is also the source file: `schematic.drawio.svg` contains a copy of the diagram, so it can be reopened and edited in draw.io. There is no separate `.drawio` file to keep in sync.
+>
+> 1. Pull the latest version first, and tell the group you are editing it. Two people editing at once overwrite each other, because git cannot merge images.
+> 2. Open <https://app.diagrams.net> and choose **File → Open from → Device**, then select `schematic.drawio.svg`.
+> 3. Edit, then **File → Save**. Check that the downloaded file is still called `schematic.drawio.svg`.
+> 4. Replace the file in `hardware/` and commit. On GitHub: *Add file → Upload files* with the same name, commit straight to `main`.
+
+
+
 ### MH-Z19 CO₂ sensor
 
 | Arduino pin | MH-Z19 pin | Why |
