@@ -1,84 +1,80 @@
 # OS4P Reproducibility Challenge — Arduino CO₂ / P-T-RH Logger
 
+Low-cost CO₂ and P/T/RH logger with an Arduino Uno.
+
 **Course:** Open Science for Physicists (NS-PH500M), 2026–2027, Utrecht University
 **Group:** 10
-**Members:** _TODO: names + GitHub usernames_
 **Phase 1 deadline:** 5 October 2026
+
+**Members:** _(TODO: add GitHub usernames)_
+
+- Niels Franke
+- Daniel Rouschop Dror
+- Dave Dewdath
+- Joram Vliem
+- Paolo Dioni
+- Diego Gomez
+- Ime Rasenberg
 
 ---
 
 ## What this repository is
 
-This repository documents an experiment in which an **Arduino Uno** is used to
-build a stand-alone data logger that records either:
+An **Arduino Uno** stand-alone data logger that records either **CO₂** (ppm,
+MH-Z19C infrared sensor) or **temperature, pressure and relative humidity**
+(BME280) to a `.csv` file on an SD card, so it can run untethered from a
+powerbank.
 
-1. **CO₂ partial pressure** (ppm), using an MH-Z19 infrared sensor, or
-2. **Temperature, pressure and relative humidity**, using a BME280 sensor
+The goal is that a physics master's student who has never seen this setup can
+rebuild it, re-run it and obtain comparable data using only this repository.
 
-In both cases the measurements are written to a `.csv` file on an SD card, so
-the logger can run untethered from a powerbank.
+## Quick start
 
-The goal is not the sensor itself. The goal is that a physics master's
-student who has never seen this setup can rebuild it, re-run it, and obtain
-comparable data using only the contents of this repository. 
+1. Install the Arduino IDE ([download](https://www.arduino.cc/en/software/), we used 2.3.10).
+2. Gather the parts: [`hardware/components.md`](hardware/components.md).
+3. Wire everything: [`hardware/wiring.md`](hardware/wiring.md) (includes the diagram).
+4. Check the board responds: upload [`code/connection_test`](code/connection_test/connection_test.ino).
+5. Clear the SD card: upload [`code/erase_sd`](code/erase_sd/erase_sd.ino).
+6. Upload the logger: [`code/co2_logger`](code/co2_logger/co2_logger.ino).
+7. Measure, then read the SD card on a computer and copy `data.csv` into `data/raw/` (naming rules in [`data/README.md`](data/README.md)).
+8. Plot with the script in [`analysis/`](analysis/).
 
-## Quick start 
-1. Read [`hardware/components.md`](hardware/components.md) and gather the parts.
-2. Wire everything according to [`hardware/wiring.md`](hardware/wiring.md).
-3. Verify your board connects: upload [`code/connection_test`](code/connection_test/connection_test.ino).
-4. Clear the SD card: upload [`code/erase_sd`](code/erase_sd/erase_sd.ino).
-5. Upload the logger you want: [`code/co2_logger`](code/co2_logger/co2_logger.ino) or [`code/bme280_logger`](code/bme280_logger/bme280_logger.ino).
-6. Run the measurement following [Experimental protocol](#experimental-protocol) below.
-7. Retrieve the data by reading the SD card directly on a computer.
-8. Plot the results.
+Something not working? See [`troubleshooting.md`](troubleshooting.md). What we did and when: [`logbook.md`](logbook.md).
 
 ## Repository map
 
-| Path | What is in it |
+| Path | Contents |
 |---|---|
-| [`hardware/components.md`](hardware/components.md) | Full bill of materials with exact models |
-| [`hardware/wiring.md`](hardware/wiring.md) | Pin-by-pin wiring tables and why each pin was chosen |
-| [`hardware/photos/`](hardware/photos/) | Photographs of the assembled setup |
-| [`code/README.md`](code/README.md) | Line-by-line walkthrough of every sketch |
-| [`code/`](code/) | All Arduino sketches (one folder per sketch, as the IDE requires) |
-| [`data/README.md`](data/README.md) | What each dataset is, when and where it was recorded |
-| [`data/raw/`](data/raw/) | Unmodified `.csv` files as they came off the SD card |
-| [`analysis/`](analysis/) | Script to reproduce the figures from the raw data |
-| [`troubleshooting.md`](troubleshooting.md) | Every error we hit, and how we fixed it |
+| [`hardware/`](hardware/) | Bill of materials, wiring tables and diagram, photos |
+| [`code/`](code/) | Arduino sketches, with a walkthrough in [`code/README.md`](code/README.md) |
+| [`data/`](data/) | Raw measurements and an inventory of every run |
+| [`analysis/`](analysis/) | Script that reproduces the figures from the raw data |
+| [`troubleshooting.md`](troubleshooting.md) | Errors we hit and their fixes |
 | [`logbook.md`](logbook.md) | Chronological diary of the build |
-
 
 ## Software environment
 
-Reproducibility depends on versions. Record what you actually used:
-
 | Item | Version we used |
 |---|---|
-| Arduino IDE | _TODO: e.g. 2.3.2_ |
+| Arduino IDE | 2.3.10 |
 | Board selected in IDE | Arduino Uno |
-| Operating system | _TODO: e.g. Windows 11 / macOS 14_ |
-| Python (analysis) | _TODO: e.g. 3.11_ |
-
-
+| Operating system | _TODO_ |
+| Python (analysis) | _TODO_ |
 
 ## Experimental protocol
 
-_TODO: fill this in with what you actually did. The template below shows the
-level of detail required — replace every placeholder._
+_TODO: what you actually did, in enough detail to repeat it._ Cover: warm-up
+time, whether the CO₂ sensor was calibrated, sensor location, run duration, and
+any deliberate perturbation with its clock time.
 
-### CO₂ measurement
+## Results
 
-1. 
+_TODO: link the figures from `analysis/figures/` and the observed ranges._
 
-### P/T/RH measurement
+## Limitations
 
-_TODO: same structure as above, for the BME280 run._
-
-## Expected results
-
-_TODO: replace with your own figures and observed ranges once you have data._
-
-
-Figures produced from our data: _TODO: link them here, e.g._
-`analysis/figures/co2_run1.png`.
-
+- The time column of `co2_logger` is **inferred** (reading number × 10 s), not
+  wall-clock time: a failed reading writes no row, so later timestamps fall
+  behind. Always record the real start time of a run in
+  [`data/README.md`](data/README.md).
+- _TODO: calibration status of the CO₂ sensor._
