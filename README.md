@@ -4,7 +4,7 @@ Low-cost CO₂ and P/T/RH logger with an Arduino Uno.
 
 **Course:** Open Science for Physicists (NS-PH500M), 2026–2027, Utrecht University
 **Group:** 10
-**Phase 1 deadline:** 5 October 2026
+**Phase 1 deadline:** 9 October 2026
 
 **Members:** _(TODO: add GitHub usernames)_
 
