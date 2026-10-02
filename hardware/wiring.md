@@ -9,6 +9,8 @@ one is on `docs.arduino.cc` under "Arduino Uno Rev3".
 
 ## Setup A — CO₂ logger (MH-Z19 + SD card)
 
+![CO2 logger wiring diagram](schematic.drawio.svg)
+
 ### MH-Z19 CO₂ sensor
 
 | Arduino pin | MH-Z19 pin | Why |
