@@ -78,3 +78,9 @@ _TODO: link the figures from `analysis/figures/` and the observed ranges._
   behind. Always record the real start time of a run in
   [`data/README.md`](data/README.md).
 - _TODO: calibration status of the CO₂ sensor._
+
+
+## License
+
+- Code in `code/` and `analysis/`: [MIT](LICENSE)
+- Documentation, diagrams, photos and data: [CC BY 4.0](LICENSE-CC-BY-4.0.md)
