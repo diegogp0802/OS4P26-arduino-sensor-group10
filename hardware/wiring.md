@@ -43,3 +43,23 @@ one is on `docs.arduino.cc` under "Arduino Uno Rev3".
 - [ ] No component is connected to pins 0 or 1
 - [ ] Supply voltage of each breakout matches what it tolerates
 
+# Manuals
+## Arduino
+
+The manual for the arduino can be found here:
+https://agelectronica.lat/pdfs/textos/A/A000066.PDF
+
+
+
+## CO2 sensor
+
+The manual for the CO2 sensor can be found here:
+https://www.tinytronics.nl/product_files/003109_MH-Z19C-DZ-terminal%20type%20CO2%20Manual(Ver1.21)-202103.pdf
+
+
+
+
+## The SD card manual is
+
+The manual for the SD card reader can be found here:
+https://docs.arduino.cc/learn/programming/sd-guide/
