@@ -35,7 +35,7 @@ _TODO: one row per file. Fill in as you collect data._
 | File | Sensor | Date | Start time | Location | Duration | Conditions and events |
 |---|---|---|---|---|---|---|
 | `TODO.csv` | MH-Z19 | TODO | TODO | TODO | TODO | e.g. "exhaled onto sensor at t ≈ 180 s; 4 people in room, window closed" |
-| `TODO.csv` | P/T/RH logger  | TODO | TODO | TODO | TODO | TODO |
+| `TODO.csv` | MH-Z19  | TODO | TODO | TODO | TODO | TODO |
 
 ## Metadata to record for every run
 

@@ -1,6 +1,6 @@
 # Wiring
 
-Photographs are not a wiring diagram. This file states every connection explicitly, because a photograph of a breadboard cannot be read reliably by someone who did not build it.
+This file states every connection explicitly, because a photograph of a breadboard cannot be read reliably by someone who did not build it.
 
 A pinout diagram of the Arduino Uno is useful alongside this page; the official
 one is on `docs.arduino.cc` under "Arduino Uno Rev3".

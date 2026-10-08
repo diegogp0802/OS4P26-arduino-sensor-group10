@@ -34,7 +34,7 @@ rebuild it, re-run it and obtain comparable data using only this repository.
 4. Check the board responds: upload [`code/connection_test`](code/connection_test/connection_test.ino).
 5. Clear the SD card: upload [`code/erase_sd`](code/erase_sd/erase_sd.ino).
 6. Upload the logger: [`code/co2_logger`](code/co2_logger/co2_logger.ino).
-7. Measure, then read the SD card on a computer and copy `data.csv` into `data/raw/` (naming rules in [`data/README.md`](data/README.md)).
+7. Measure, then read the SD card on a computer and copy `data.csv` into `data/` (naming rules in [`data/README.md`](data/README.md)).
 8. Plot with the script in [`analysis/`](analysis/).
 
 Something not working? See [`troubleshooting.md`](troubleshooting.md). 
