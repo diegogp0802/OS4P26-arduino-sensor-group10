@@ -107,6 +107,12 @@ method**, which needs no code.
 1. **Ambient check:** outdoors, the reading should sit at about 400–450 ppm.
 2. **Response check:** breathe gently towards the sensor from about 30 cm and step away. The reading should climb to thousands of ppm within seconds to a minute and then decay. This confirms the sensor responds; it is not a quantitative test.
 
+### D. Handling cautions
+
+- Avoid condensation, water, strong vibration and shock.
+- Do not open or touch the sensor housing after calibration.
+- A reading that is constantly 0, constantly 400/410, or far outside 300–5000 ppm usually indicates warm-up, wiring or calibration problems; see [`troubleshooting.md`](troubleshooting.md).
+
 ## Results
 
 _TODO: link the figures from `analysis/figures/` and the observed ranges._
