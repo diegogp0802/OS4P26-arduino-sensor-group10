@@ -65,6 +65,48 @@ _TODO: what you actually did, in enough detail to repeat it._ Cover: warm-up
 time, whether the CO₂ sensor was calibrated, sensor location, run duration, and
 any deliberate perturbation with its clock time.
 
+This protocol covers the **MH-Z19C** sensor. Pin assignments for the whole
+logger (sensor and SD module) are in [`hardware/wiring.md`](hardware/wiring.md);
+that file is the single source of truth. The sensor pins are only summarised
+here by *name*.
+
+### Sensor specifications
+
+| Property | Value |
+|---|---|
+| Measurement principle | Non-dispersive infrared (NDIR) |
+| Range | 0–5000 ppm |
+| Accuracy | about ±(50 ppm + 5 % of reading) |
+| Supply voltage | 4.5–5.5 V (peak current about 150 mA during warm-up) |
+| Logic level | 3.3 V on Tx/Rx |
+| Interface used | UART, 9600 baud |
+| Minimum warm-up (datasheet) | 3 minutes |
+
+### A. Before wiring: what to disconnect
+
+1. **Unplug the USB cable and any powerbank** before touching any wire.
+2. Remove everything else from the pins that the sensor will use (see `hardware/wiring.md`) as well as from 5 V and GND (shields, spare sensors).
+3. Keep **D6/D7 free**. These are the hardware serial pins shared with the USB connection; anything on them blocks uploads.
+4. Keep the sensor pins **HD**, **PWM/Vo** and **Vout (3.3 V out)** unconnected during normal logging:
+
+### B. Warm-up and calibration
+
+The MH-Z19C measures against an internal 400 ppm "zero point". Because the
+logger sketch does not send calibration commands, we use the **hardware (HD pin)
+method**, which needs no code.
+
+**Zero-point calibration (400 ppm):**
+
+1. Take the powered logger **outdoors**, upwind of people, vehicles and exhausts. Keep your own breath away from the sensor.
+2. Let it **warm up and stabilise for more than 20 minutes**, until the reading is flat (within about ±20 ppm). The datasheet minimum is 3 minutes, but the early readings are unreliable.
+3. With the logger still powered, connect the **HD pin to GND for at least 7 seconds**, then remove the wire.
+4. Wait 1–2 minutes. The reading should settle at about 400 ppm.
+
+### C. Validation check (before every campaign)
+
+1. **Ambient check:** outdoors, the reading should sit at about 400–450 ppm.
+2. **Response check:** breathe gently towards the sensor from about 30 cm and step away. The reading should climb to thousands of ppm within seconds to a minute and then decay. This confirms the sensor responds; it is not a quantitative test.
+
 ## Results
 
 _TODO: link the figures from `analysis/figures/` and the observed ranges._
