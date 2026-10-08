@@ -1,0 +1,5 @@
+# Versions the script was tested with (Python 3.13).
+# If pip cannot install these on your Python version, relax "==" to ">=" and
+# note in analysis/README.md which versions you actually ran.
+numpy==2.5.3
+matplotlib==3.11.2
