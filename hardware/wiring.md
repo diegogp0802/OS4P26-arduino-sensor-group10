@@ -21,8 +21,6 @@ one is on `docs.arduino.cc` under "Arduino Uno Rev3".
 > 3. Edit, then **File → Save**. Check that the downloaded file is still called `schematic.drawio.svg`.
 > 4. Replace the file in `hardware/` and commit. On GitHub: *Add file → Upload files* with the same name, commit straight to `main`.
 
-
-
 ### MH-Z19 CO₂ sensor
 
 | Arduino pin | MH-Z19 pin | Why |
@@ -43,15 +41,9 @@ one is on `docs.arduino.cc` under "Arduino Uno Rev3".
 | 5V | **VCC** | _TODO: check your breakout — some are 3.3 V only_ |
 | GND | **GND** | Common ground |
 
-Pins 11, 12 and 13 never appear in the sketch. They do not need to: `SPI.h`
-drives them directly, and on an Uno their locations are fixed in silicon. Only
-`CS` is configurable, which is why only `chipSelect` is declared.
+
 
 ---
-
-## Setup B — P/T/RH logger 
-
-
 
 
 ## Wiring checklist before powering up

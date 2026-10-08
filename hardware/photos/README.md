@@ -4,8 +4,7 @@ Add photographs of the assembled setup here. A wiring table is the primary refer
 
 ## Naming
 
-`<setup>_<view>.jpg`, e.g. `co2_overview.jpg`, `co2_arduino-pins-closeup.jpg`,
-`bme280_overview.jpg`.
+`<setup>_<view>.jpg`, e.g. `co2_overview.jpg`, `co2_arduino-pins-closeup.jpg`.
 
 Reference them from the markdown files like this:
 

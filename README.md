@@ -1,14 +1,14 @@
-# OS4P Reproducibility Challenge — Arduino CO₂ / P-T-RH Logger
+# OS4P Reproducibility Challenge — Arduino CO₂
 
-Low-cost CO₂ and P/T/RH logger with an Arduino Uno.
+Low-cost CO₂ with an Arduino Uno.
 
 **Course:** Open Science for Physicists (NS-PH500M), 2026–2027, Utrecht University
 **Group:** 10
-**Phase 1 deadline:** 9 October 2026
 
-**Members:** _(TODO: add GitHub usernames)_
 
-- Niels Franke
+**Members:** 
+
+- Niels Franke 
 - Daniel Rouschop Dror
 - Dave Dewdath
 - Joram Vliem
@@ -20,10 +20,8 @@ Low-cost CO₂ and P/T/RH logger with an Arduino Uno.
 
 ## What this repository is
 
-An **Arduino Uno** stand-alone data logger that records either **CO₂** (ppm,
-MH-Z19C infrared sensor) or **temperature, pressure and relative humidity**
-(BME280) to a `.csv` file on an SD card, so it can run untethered from a
-powerbank.
+An **Arduino Uno** stand-alone data logger that records **CO₂** (ppm,
+MH-Z19C infrared sensor) to a `.csv` file on an SD card, so it can run untethered from a powerbank.
 
 The goal is that a physics master's student who has never seen this setup can
 rebuild it, re-run it and obtain comparable data using only this repository.
@@ -39,7 +37,7 @@ rebuild it, re-run it and obtain comparable data using only this repository.
 7. Measure, then read the SD card on a computer and copy `data.csv` into `data/raw/` (naming rules in [`data/README.md`](data/README.md)).
 8. Plot with the script in [`analysis/`](analysis/).
 
-Something not working? See [`troubleshooting.md`](troubleshooting.md). What we did and when: [`logbook.md`](logbook.md).
+Something not working? See [`troubleshooting.md`](troubleshooting.md). 
 
 ## Repository map
 
@@ -58,8 +56,8 @@ Something not working? See [`troubleshooting.md`](troubleshooting.md). What we d
 |---|---|
 | Arduino IDE | 2.3.10 |
 | Board selected in IDE | Arduino Uno |
-| Operating system | _TODO_ |
-| Python (analysis) | _TODO_ |
+| Operating system | Windows 11 |
+| Python (analysis) | Python 3.13 |
 
 ## Experimental protocol
 
@@ -84,5 +82,5 @@ _TODO: link the figures from `analysis/figures/` and the observed ranges._
 
 Copyright © 2026 OS4P26 Group 10
 
-- Code in `code/` and `analysis/`: [MIT](LICENSE)
-- Documentation, diagrams, photos and data: [CC BY 4.0](LICENSE-CC-BY-4.0.md)
+- Code in `code/` and `analysis/`: [MIT](licenses/LICENSE)
+- Documentation, diagrams, photos and data: [CC BY 4.0](licenses/LICENSE-CC-BY-4.0.md)

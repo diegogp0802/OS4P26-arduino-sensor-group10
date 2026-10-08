@@ -10,7 +10,7 @@ never written Arduino code before. Arduino uses a simplified dialect of **C++**.
 | `connection_test/` | Blinks the built-in LED and prints uptime | First, always|
 | `erase_sd/` | Deletes `data.csv` | Before every new measurement run |
 | `co2_logger/` | Logs CO₂ every 10 s to the SD card | Setup A |
-| `TODO` | Logs T, P, RH every 10 s to the SD card | Setup B |
+
 
 Each sketch lives in its own folder with a matching name. This is a requirement
 of the Arduino IDE, not a stylistic choice: a `.ino` file must sit inside a

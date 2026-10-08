@@ -2,7 +2,7 @@
 
 ## Rules
 
-- Files in `raw/` are **exactly** as they came off the SD card. Never edit them,
+- Files in `data/` are **exactly** as they came off the SD card. Never edit them,
   not even to fix a header or delete a bad row. Corrections belong in
   `analysis/`, where they are visible and reversible.
 - Rename each file descriptively when you copy it in — every run produces a file
@@ -16,8 +16,7 @@
 <sensor>_<YYYYMMDD>_<short-description>.csv
 ```
 
-Examples: `co2_20261005_classroom-minn011.csv`,
-`bme280_20261005_lecture-2h.csv`
+Examples: `co2_20261005_classroom-minn011.csv`
 
 ## Column definitions
 
@@ -27,9 +26,6 @@ Examples: `co2_20261005_classroom-minn011.csv`,
 |---|---|---|
 | `Time (seconds)` | s | **Inferred**, not measured: reading number × 10 s. Drifts behind real time if any reading fails |
 | `CO2 (ppm)` | ppm | Parts per million by volume. Uncalibrated |
-
-### P/T/RH logger
-
 
 
 ## Inventory
