@@ -36,8 +36,8 @@ const int chipSelect = 10;
 // Built-in LED on the Uno. WARNING: pin 13 is also the SPI clock (SCK).
 const int statusLed = 13;
 
-// Sampling interval in milliseconds. 10000 ms = 10 s.
-const int time_step = 10000;
+// Sampling interval in milliseconds. 1000 ms = 1 s.
+const int time_step = 1000;
 
 // --- Objects and global state ---------------------------------------------
 // A second, software-emulated serial port dedicated to the sensor, so that the
