@@ -8,7 +8,9 @@ The figure is saved to analysis/figures/<file>.png
 import numpy as np
 import matplotlib.pyplot as plt
 
-path = "../data/dataarduino.csv"
+file_name = "dataarduino"
+
+path = f"../data/{file_name}.csv"
 time_s, co2_ppm = np.loadtxt(path, delimiter=",", skiprows=1, unpack=True)
 
 plt.figure(figsize=(10, 4))
@@ -20,4 +22,4 @@ plt.grid(alpha=0.3)
 plt.tight_layout()
 
 
-plt.savefig("../analysis/figures/Graph.pdf", dpi=150)
+plt.savefig(f"../analysis/figures/{file_name}.pdf", dpi=150)
