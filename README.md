@@ -115,7 +115,7 @@ method**, which needs no code.
 
 ## Results
 
-_TODO: link the figures from `analysis/figures/` and the observed ranges._
+Our results [`Graph.pdf`](analysis/figures/Graph.pdf). Further explenation of the values in the graph can be found here [`Inventory table`](data/README.md). The CO₂ PPM range from around 500 to 2000 at its peak.  
 
 ## Limitations
 
