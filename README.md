@@ -43,7 +43,7 @@ Something not working? See [`troubleshooting.md`](troubleshooting.md).
 
 | Path | Contents |
 |---|---|
-| [`hardware/`](hardware/) | Bill of materials, wiring tables and diagram, photos |
+| [`hardware/`](hardware/) | Bill of materials, wiring tables and diagram |
 | [`code/`](code/) | Arduino sketches, with a walkthrough in [`code/README.md`](code/README.md) |
 | [`data/`](data/) | Raw measurements and an inventory of every run |
 | [`analysis/`](analysis/) | Script that reproduces the figures from the raw data |
