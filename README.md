@@ -61,9 +61,7 @@ Something not working? See [`troubleshooting.md`](troubleshooting.md).
 
 ## Experimental protocol
 
-_TODO: what you actually did, in enough detail to repeat it._ Cover: warm-up
-time, whether the CO₂ sensor was calibrated, sensor location, run duration, and
-any deliberate perturbation with its clock time.
+For our run, see the inventory tab of the data section [`data/README.md#inventory`](data/README.md#inventory) for the conditions our data was measured under. 
 
 This protocol covers the **MH-Z19C** sensor. Pin assignments for the whole
 logger (sensor and SD module) are in [`hardware/wiring.md`](hardware/wiring.md);
