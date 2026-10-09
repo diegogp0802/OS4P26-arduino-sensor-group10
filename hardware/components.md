@@ -7,9 +7,9 @@ hardware we used.
 
 | # | Component | Exact model we used | Notes |
 |---|---|---|---|
-| 1 | Microcontroller board | Arduino Uno R3 | Named in our wiring diagram. [Instruction manual](https://agelectronica.lat/pdfs/textos/A/A000066.PDF) |
-| 2 | CO₂ sensor | MH-Z19C | Named in our wiring diagram. [Instruction manual](https://www.tinytronics.nl/product_files/003109_MH-Z19C-DZ-terminal%20type%20CO2%20Manual(Ver1.21)-202103.pdf) |
-| 3 | SD card reader | microSD card adapter | Named in our wiring diagram. [SD connection guide](https://docs.arduino.cc/learn/programming/sd-guide/)|
+| 1 | Microcontroller board | Arduino Uno R3 | For additional info: [Instruction manual](https://agelectronica.lat/pdfs/textos/A/A000066.PDF) |
+| 2 | CO₂ sensor | MH-Z19C | For additional info. [Instruction manual](https://www.tinytronics.nl/product_files/003109_MH-Z19C-DZ-terminal%20type%20CO2%20Manual(Ver1.21)-202103.pdf) |
+| 3 | SD card reader | microSD card adapter | [SD connection guide](https://docs.arduino.cc/learn/programming/sd-guide/) |
 | 4 | SD card | 32Gb |  |
 | 5 | Breadboard | 400-tie-point, half-size solderless breadboard. | [Guide for breadboard and wiring diagram](https://www.sciencebuddies.org/science-fair-projects/references/how-to-use-a-breadboard#breadboard-diagram) |
 | 6 | Jumper cables | Male-to-male, male-to-female as needed | |
