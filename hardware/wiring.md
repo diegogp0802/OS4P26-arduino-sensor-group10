@@ -29,7 +29,7 @@ one is on `docs.arduino.cc` under "Arduino Uno Rev3".
 | Pin 11 | **MOSI** | Fixed by the hardware SPI peripheral on the Uno |
 | Pin 12 | **MISO** | Fixed by the hardware SPI peripheral on the Uno |
 | Pin 13 | **SCK** | Fixed by the hardware SPI peripheral on the Uno |
-| 5V | **VCC** | _TODO: check your breakout — some are 3.3 V only_ |
+| 5V | **VCC** | check your breakout, some are 3.3 V only (see wiring checklist below) |
 | GND | **GND** | Common ground |
 
 
