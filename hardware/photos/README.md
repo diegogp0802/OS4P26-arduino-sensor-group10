@@ -1,13 +1,11 @@
-# Photographs
+<img width="300" height="400" alt="MH-Z CO2 Sensor" src="https://github.com/user-attachments/assets/da81f126-3b83-4504-9c98-8876ba293c3b" />
 
-Add photographs of the assembled setup here. A wiring table is the primary reference (see `../wiring.md`), but photographs catch things a table cannot: which hole on the breadboard, how components are oriented, which way round a module sits.
+<p align="center">MH-Z CO₂ Sensor</p>
 
-## Naming
+<img width="300" height="400" alt="Breadboard" src="https://github.com/user-attachments/assets/61300573-c28b-4ea8-b25b-5ba9475a7dd7" />
 
-`<setup>_<view>.jpg`, e.g. `co2_overview.jpg`, `co2_arduino-pins-closeup.jpg`.
+<p align="center">Breadboard</p>
 
-Reference them from the markdown files like this:
+<img width="300" height="400" alt="SD Card Adapter" src="https://github.com/user-attachments/assets/b6ecefeb-2a78-45be-88bd-108af2f16a16" />
 
-```markdown
-![CO2 setup overview](photos/co2_overview.jpg)
-```
+<p align="center">SD Card Adapter</p>
