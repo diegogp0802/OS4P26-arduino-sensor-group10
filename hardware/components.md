@@ -8,7 +8,7 @@ hardware we used.
 | # | Component | Exact model we used | Notes |
 |---|---|---|---|
 | 1 | Microcontroller board | Arduino Uno Rev3? | _TODO: confirm revision, original or clone_ |
-| 2 | CO₂ sensor | MH-Z19C | Named in our wiring diagram. _TODO: add a link to the instruction manual that matches your exact module_ |
+| 2 | CO₂ sensor | MH-Z19C | Named in our wiring diagram. _TODO: add a link to the instruction manual that matches your exact module_ [Instruction manual](https://www.tinytronics.nl/product_files/003109_MH-Z19C-DZ-terminal%20type%20CO2%20Manual(Ver1.21)-202103.pdf)|
 | 3 | SD card reader | microSD card adapter | Named in our wiring diagram. _TODO: model/brand_ |
 | 4 | SD card | _TODO: capacity_ |  |
 | 5 | Breadboard | Size ? | |
