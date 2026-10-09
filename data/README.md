@@ -30,12 +30,9 @@ Examples: `co2_20261005_classroom-minn011.csv`
 
 ## Inventory
 
-_TODO: one row per file. Fill in as you collect data._
-
 | File | Sensor | Date | Start time | Location | Duration | Conditions and events |
 |---|---|---|---|---|---|---|
-| `TODO.csv` | MH-Z19 | TODO | TODO | TODO | TODO | e.g. "exhaled onto sensor at t ≈ 180 s; 4 people in room, window closed" |
-| `TODO.csv` | MH-Z19  | TODO | TODO | TODO | TODO | TODO |
+| `co_2_20261005_room.csv` | MH-Z19 | 05/10/2026 | 15:19 | Bedroom | 5:19:35 | Warm up time of 120s visible in data. One person in room at 0.5-1m distance, window & door closed. Sensor calibrated inside around 30 minutes before start of measurement. Breathed on sensor around t = 19157s (5:19:17) |
 
 ## Metadata to record for every run
 
