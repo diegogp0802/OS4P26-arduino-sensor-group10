@@ -119,11 +119,11 @@ Our results [`Graph.pdf`](analysis/figures/Graph.pdf). Further explenation of th
 
 ## Limitations
 
-- The time column of `co2_logger` is **inferred** (reading number × 10 s), not
+- The time column of `co2_logger` is **inferred** (reading number × 1 s), not
   wall-clock time: a failed reading writes no row, so later timestamps fall
   behind. Always record the real start time of a run in
   [`data/README.md`](data/README.md).
-- _TODO: calibration status of the CO₂ sensor._
+- In our run, the CO2 sensor was calibrated inside, meaning the measurement was not properly calibrated. We recommend calibrating it outside if possible to get accurate readings.
 
 
 ## License
